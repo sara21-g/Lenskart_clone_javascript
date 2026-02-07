@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenskart.com - Buy Eyeglasses, Sunglasses & Contact Lenses Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <strong>FREE SHIPPING</strong> on orders above ₹2000 | <strong>60 Days Return Policy</strong> | <strong>Try 3D Try On</strong>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo-image">
+                        <img src="images/logo.png" alt="Lenskart Logo">
+                    </a>
+                    
+                    <div class="search-bar">
+                        <input type="text" placeholder="What are you looking for?">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <div class="header-actions">
+                        <a href="#" class="header-action" id="loginBtn">
+                            <i class="far fa-user"></i>
+                            <span>Account</span>
+                        </a>
+                        <a href="#" class="header-action">
+                            <i class="far fa-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="#" class="header-action cart-badge">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                        <!-- Theme Toggle Button -->
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#eyeglasses" class="nav-link" data-section="eyeglasses">EYEGLASSES <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="nav-item"><a href="#sunglasses" class="nav-link" data-section="sunglasses">SUNGLASSES <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="nav-item"><a href="#screen-glasses" class="nav-link" data-section="screen-glasses">SCREEN GLASSES <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="nav-item"><a href="#contact-lenses" class="nav-link" data-section="contact-lenses">CONTACT LENSES <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="nav-item"><a href="#power-sunglasses" class="nav-link" data-section="power-sunglasses">POWER SUNGLASSES <i class="fas fa-chevron-down"></i></a></li>
+                    <li class="nav-item"><a href="#try-on" class="nav-link special" data-section="try-on">3D TRY ON</a></li>
+                    <li class="nav-item"><a href="#store-locator" class="nav-link" data-section="store-locator">STORE LOCATOR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="heroSlider">
+        <div class="slide active" style="background-image: url('images/hero/slide1.png'); background-size: cover; background-position: center;">
+            <div class="slide-content">
+                Winter Sale - Up to 60% OFF
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/hero/slide2.png'); background-size: cover; background-position: center;">
+            <div class="slide-content">
+                New Arrivals 2026
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('images/hero/slide3.png'); background-size: cover; background-position: center;">
+            <div class="slide-content">
+                Try 3D Virtual Try-On
+            </div>
+        </div>
+
+        <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section" id="eyeglasses">
+        <div class="container">
+            <h2 class="section-title">Top Categories</h2>
+
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="images/categories/eyeglasses.png" alt="Eyeglasses">
+                    </div>
+                    <div class="category-info">
+                        <p class="category-name">Eyeglasses</p>
+                        <p class="category-desc">Starting from ₹1000</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="images/categories/sunglasses.png" alt="Sunglasses">
+                    </div>
+                    <div class="category-info">
+                        <p class="category-name">Sunglasses</p>
+                        <p class="category-desc">Starting from ₹1500</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="images/categories/computer.png" alt="Computer Glasses">
+                    </div>
+                    <div class="category-info">
+                        <p class="category-name">Computer Glasses</p>
+                        <p class="category-desc">Starting from ₹1200</p>
+                    </div>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-image">
+                        <img src="images/categories/lenses.png" alt="Contact Lenses">
+                    </div>
+                    <div class="category-info">
+                        <p class="category-name">Contact Lenses</p>
+                        <p class="category-desc">Starting from ₹500</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Try-On Banner -->
+    <section class="try-on-banner" id="try-on">
+        <div class="container">
+            <h2>Experience Our 3D Virtual Try-On</h2>
+            <p>See how glasses look on you before you buy - right from your device!</p>
+            <button class="btn" id="tryOnBtn">Try Now</button>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="sunglasses">
+        <div class="container">
+            <h2 class="section-title">TRENDING EYEGLASSES</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <span class="product-badge">BESTSELLER</span>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p1.png" alt="Vincent Chase Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-count">(4.5/5) 2.3k</span>
+                        </div>
+                        <h3 class="product-name">Vincent Chase Sleek Steel VC E13478</h3>
+                        <p class="product-size">Size: Medium • Matte Black Full Rim Rectangle</p>
+                        <div class="product-price">
+                            <span class="current-price">₹1,500</span>
+                            <span class="original-price">₹3,000</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <span class="product-badge">NEW</span>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p2.png" alt="John Jacobs Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-count">(4.0/5) 1.8k</span>
+                        </div>
+                        <h3 class="product-name">John Jacobs Supreme Steel JJ E13957</h3>
+                        <p class="product-size">Size: Wide • Gunmetal Full Rim Aviator</p>
+                        <div class="product-price">
+                            <span class="current-price">₹2,200</span>
+                            <span class="original-price">₹4,000</span>
+                            <span class="discount">45% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p3.png" alt="Lenskart Air Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-count">(5.0/5) 3.1k</span>
+                        </div>
+                        <h3 class="product-name">Lenskart Air Wrap LA E14532</h3>
+                        <p class="product-size">Size: Medium • Crystal Blue Full Rim Round</p>
+                        <div class="product-price">
+                            <span class="current-price">₹1,800</span>
+                            <span class="original-price">₹3,500</span>
+                            <span class="discount">49% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <span class="product-badge">HOT DEAL</span>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p4.png" alt="Aqualens">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-count">(4.2/5) 1.5k</span>
+                        </div>
+                        <h3 class="product-name">Aqualens Sleek LK E12890</h3>
+                        <p class="product-size">Size: Narrow • Transparent Full Rim Cat Eye</p>
+                        <div class="product-price">
+                            <span class="current-price">₹1,200</span>
+                            <span class="original-price">₹2,500</span>
+                            <span class="discount">52% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p5.png" alt="Vincent Chase Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-count">(4.6/5) 2.9k</span>
+                        </div>
+                        <h3 class="product-name">Vincent Chase Polarized VC S14920</h3>
+                        <p class="product-size">Size: Medium • Black Full Rim Wayfarer Sunglasses</p>
+                        <div class="product-price">
+                            <span class="current-price">₹2,500</span>
+                            <span class="original-price">₹5,000</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <span class="product-badge">TRENDING</span>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p6.png" alt="John Jacobs Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-count">(4.1/5) 1.2k</span>
+                        </div>
+                        <h3 class="product-name">John Jacobs Smart VC S13456</h3>
+                        <p class="product-size">Size: Large • Brown Full Rim Aviator Sunglasses</p>
+                        <div class="product-price">
+                            <span class="current-price">₹2,800</span>
+                            <span class="original-price">₹5,500</span>
+                            <span class="discount">49% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p7.png" alt="Lenskart Blu Glasses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-count">(4.8/5) 4.2k</span>
+                        </div>
+                        <h3 class="product-name">Lenskart BLU Zero Power LK E15678</h3>
+                        <p class="product-size">Size: Medium • Black Full Rim Rectangle Computer Glasses</p>
+                        <div class="product-price">
+                            <span class="current-price">₹1,400</span>
+                            <span class="original-price">₹3,000</span>
+                            <span class="discount">53% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Try On</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+                    <span class="product-badge">SALE</span>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/products/p8.png" alt="Bausch & Lomb Contact Lenses">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-count">(4.7/5) 3.5k</span>
+                        </div>
+                        <h3 class="product-name">Bausch & Lomb Monthly Contact Lenses</h3>
+                        <p class="product-size">Pack of 6 Lenses • -2.50 Power</p>
+                        <div class="product-price">
+                            <span class="current-price">₹999</span>
+                            <span class="original-price">₹1,800</span>
+                            <span class="discount">44% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Buy Now</button>
+                            <button class="btn btn-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-desc">On all orders above ₹2000 across India</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="feature-title">60 Days Return</h3>
+                    <p class="feature-desc">Easy returns & exchange within 60 days</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">1 Year Warranty</h3>
+                    <p class="feature-desc">Manufacturing defects warranty on frames</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="feature-title">3D Try-On</h3>
+                    <p class="feature-desc">Virtual try-on technology for perfect fit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">OUR BRANDS</h2>
+            <div class="brands-grid">
+                <div class="brand-item" style="background-image: url('images/brands/vincent.png');">
+                </div>
+                <div class="brand-item" style="background-image: url('images/brands/johnjacobs.png');">
+                </div>
+                <div class="brand-item" style="background-image: url('images/brands/aqualens.png');">
+                </div>
+                <div class="brand-item" style="background-image: url('images/brands/air.png');">
+                </div>
+                <div class="brand-item" style="background-image: url('images/brands/hustlr.png');">
+                </div>
+                <div class="brand-item" style="background-image: url('images/brands/hooper.png');">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section with Form Validation -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2 class="newsletter-title">Sign Up For Our Newsletter</h2>
+            <p class="newsletter-subtitle">Get latest updates on new products, offers & more!</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <div style="flex: 1; position: relative;">
+                    <input type="email" id="emailInput" placeholder="Enter your email address">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Buying Guide</a></li>
+                        <li><a href="#">Frame Size</a></li>
+                        <li><a href="#">Lenskart 3D Try On</a></li>
+                        <li><a href="#">Franchise Opportunity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">We Are Hiring</a></li>
+                        <li><a href="#">Refer & Earn</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Lenskart Coupons</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Cancellation</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <h3>Download App</h3>
+                        <div style="display: flex; gap: 10px; margin-top: 15px;">
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; color: #000; font-size: 11px; font-weight: 600;">
+                                <i class="fab fa-apple"></i> App Store
+                            </div>
+                            <div style="background: white; padding: 10px 15px; border-radius: 8px; color: #000; font-size: 11px; font-weight: 600;">
+                                <i class="fab fa-google-play"></i> Play Store
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <div class="payment-icon">VISA</div>
+                    <div class="payment-icon">MC</div>
+                    <div class="payment-icon">AMEX</div>
+                    <div class="payment-icon">PAYTM</div>
+                    <div class="payment-icon">UPI</div>
+                    <div class="payment-icon">COD</div>
+                </div>
+                <p style="margin-top: 20px;">© 2026 Lenskart.com. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">
+                    <a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
+                    <a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px;">Terms & Conditions</a> | 
+                    <a href="#" style="color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px;">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal (Hidden by default) -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                    <span class="error-message" id="loginEmailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                    <span class="error-message" id="loginPasswordError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message (Hidden by default) -->
+    <div class="success-message" id="successMessage">
+        <i class="fas fa-check-circle"></i>
+        <span id="successText"></span>
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
